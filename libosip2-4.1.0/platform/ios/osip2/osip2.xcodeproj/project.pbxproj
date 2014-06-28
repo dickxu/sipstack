@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54466805195E4115005D83DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54466804195E4115005D83DA /* Foundation.framework */; };
+		54466813195E4115005D83DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54466812195E4115005D83DA /* XCTest.framework */; };
+		54466814195E4115005D83DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54466804195E4115005D83DA /* Foundation.framework */; };
+		54466816195E4115005D83DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54466815195E4115005D83DA /* UIKit.framework */; };
+		54466819195E4115005D83DA /* libosip2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54466801195E4115005D83DA /* libosip2.a */; };
+		5446681F195E4115005D83DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5446681D195E4115005D83DA /* InfoPlist.strings */; };
+		54466821195E4115005D83DA /* osip2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54466820195E4115005D83DA /* osip2Tests.m */; };
+		544668C0195E4491005D83DA /* fsm_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668A9195E4491005D83DA /* fsm_misc.c */; };
+		544668C1195E4491005D83DA /* ict_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AB195E4491005D83DA /* ict_fsm.c */; };
+		544668C2195E4491005D83DA /* ict.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AC195E4491005D83DA /* ict.c */; };
+		544668C3195E4491005D83DA /* ist_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AD195E4491005D83DA /* ist_fsm.c */; };
+		544668C4195E4491005D83DA /* ist.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AE195E4491005D83DA /* ist.c */; };
+		544668C5195E4491005D83DA /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 544668AF195E4491005D83DA /* Makefile */; };
+		544668C6195E4491005D83DA /* nict_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B2195E4491005D83DA /* nict_fsm.c */; };
+		544668C7195E4491005D83DA /* nict.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B3195E4491005D83DA /* nict.c */; };
+		544668C8195E4491005D83DA /* nist_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B4195E4491005D83DA /* nist_fsm.c */; };
+		544668C9195E4491005D83DA /* nist.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B5195E4491005D83DA /* nist.c */; };
+		544668CA195E4491005D83DA /* osip_dialog.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B6195E4491005D83DA /* osip_dialog.c */; };
+		544668CB195E4491005D83DA /* osip_event.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B7195E4491005D83DA /* osip_event.c */; };
+		544668CC195E4491005D83DA /* osip_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B8195E4491005D83DA /* osip_time.c */; };
+		544668CD195E4491005D83DA /* osip_transaction.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B9195E4491005D83DA /* osip_transaction.c */; };
+		544668CE195E4491005D83DA /* osip.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668BA195E4491005D83DA /* osip.c */; };
+		544668CF195E4491005D83DA /* port_condv.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668BB195E4491005D83DA /* port_condv.c */; };
+		544668D0195E4491005D83DA /* port_fifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668BC195E4491005D83DA /* port_fifo.c */; };
+		544668D1195E4491005D83DA /* port_sema.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668BD195E4491005D83DA /* port_sema.c */; };
+		544668D2195E4491005D83DA /* port_thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668BE195E4491005D83DA /* port_thread.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54466817195E4115005D83DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 544667F9195E4115005D83DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54466800195E4115005D83DA;
+			remoteInfo = osip2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		544667FF195E4115005D83DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54466801195E4115005D83DA /* libosip2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libosip2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54466804195E4115005D83DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54466808195E4115005D83DA /* osip2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "osip2-Prefix.pch"; sourceTree = "<group>"; };
+		54466811195E4115005D83DA /* osip2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = osip2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54466812195E4115005D83DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		54466815195E4115005D83DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5446681C195E4115005D83DA /* osip2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "osip2Tests-Info.plist"; sourceTree = "<group>"; };
+		5446681E195E4115005D83DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54466820195E4115005D83DA /* osip2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = osip2Tests.m; sourceTree = "<group>"; };
+		544668A9195E4491005D83DA /* fsm_misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fsm_misc.c; path = ../../../../src/osip2/fsm_misc.c; sourceTree = "<group>"; };
+		544668AA195E4491005D83DA /* fsm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fsm.h; path = ../../../../src/osip2/fsm.h; sourceTree = "<group>"; };
+		544668AB195E4491005D83DA /* ict_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ict_fsm.c; path = ../../../../src/osip2/ict_fsm.c; sourceTree = "<group>"; };
+		544668AC195E4491005D83DA /* ict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ict.c; path = ../../../../src/osip2/ict.c; sourceTree = "<group>"; };
+		544668AD195E4491005D83DA /* ist_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ist_fsm.c; path = ../../../../src/osip2/ist_fsm.c; sourceTree = "<group>"; };
+		544668AE195E4491005D83DA /* ist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ist.c; path = ../../../../src/osip2/ist.c; sourceTree = "<group>"; };
+		544668AF195E4491005D83DA /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = ../../../../src/osip2/Makefile; sourceTree = "<group>"; };
+		544668B0195E4491005D83DA /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.am; path = ../../../../src/osip2/Makefile.am; sourceTree = "<group>"; };
+		544668B1195E4491005D83DA /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.in; path = ../../../../src/osip2/Makefile.in; sourceTree = "<group>"; };
+		544668B2195E4491005D83DA /* nict_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nict_fsm.c; path = ../../../../src/osip2/nict_fsm.c; sourceTree = "<group>"; };
+		544668B3195E4491005D83DA /* nict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nict.c; path = ../../../../src/osip2/nict.c; sourceTree = "<group>"; };
+		544668B4195E4491005D83DA /* nist_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nist_fsm.c; path = ../../../../src/osip2/nist_fsm.c; sourceTree = "<group>"; };
+		544668B5195E4491005D83DA /* nist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nist.c; path = ../../../../src/osip2/nist.c; sourceTree = "<group>"; };
+		544668B6195E4491005D83DA /* osip_dialog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = osip_dialog.c; path = ../../../../src/osip2/osip_dialog.c; sourceTree = "<group>"; };
+		544668B7195E4491005D83DA /* osip_event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = osip_event.c; path = ../../../../src/osip2/osip_event.c; sourceTree = "<group>"; };
+		544668B8195E4491005D83DA /* osip_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = osip_time.c; path = ../../../../src/osip2/osip_time.c; sourceTree = "<group>"; };
+		544668B9195E4491005D83DA /* osip_transaction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = osip_transaction.c; path = ../../../../src/osip2/osip_transaction.c; sourceTree = "<group>"; };
+		544668BA195E4491005D83DA /* osip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = osip.c; path = ../../../../src/osip2/osip.c; sourceTree = "<group>"; };
+		544668BB195E4491005D83DA /* port_condv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = port_condv.c; path = ../../../../src/osip2/port_condv.c; sourceTree = "<group>"; };
+		544668BC195E4491005D83DA /* port_fifo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = port_fifo.c; path = ../../../../src/osip2/port_fifo.c; sourceTree = "<group>"; };
+		544668BD195E4491005D83DA /* port_sema.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = port_sema.c; path = ../../../../src/osip2/port_sema.c; sourceTree = "<group>"; };
+		544668BE195E4491005D83DA /* port_thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = port_thread.c; path = ../../../../src/osip2/port_thread.c; sourceTree = "<group>"; };
+		544668BF195E4491005D83DA /* xixt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xixt.h; path = ../../../../src/osip2/xixt.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		544667FE195E4115005D83DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54466805195E4115005D83DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5446680E195E4115005D83DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54466813195E4115005D83DA /* XCTest.framework in Frameworks */,
+				54466819195E4115005D83DA /* libosip2.a in Frameworks */,
+				54466816195E4115005D83DA /* UIKit.framework in Frameworks */,
+				54466814195E4115005D83DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544667F8195E4115005D83DA = {
+			isa = PBXGroup;
+			children = (
+				54466806195E4115005D83DA /* osip2 */,
+				5446681A195E4115005D83DA /* osip2Tests */,
+				54466803195E4115005D83DA /* Frameworks */,
+				54466802195E4115005D83DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54466802195E4115005D83DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54466801195E4115005D83DA /* libosip2.a */,
+				54466811195E4115005D83DA /* osip2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54466803195E4115005D83DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54466804195E4115005D83DA /* Foundation.framework */,
+				54466812195E4115005D83DA /* XCTest.framework */,
+				54466815195E4115005D83DA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54466806195E4115005D83DA /* osip2 */ = {
+			isa = PBXGroup;
+			children = (
+				544668A9195E4491005D83DA /* fsm_misc.c */,
+				544668AA195E4491005D83DA /* fsm.h */,
+				544668AB195E4491005D83DA /* ict_fsm.c */,
+				544668AC195E4491005D83DA /* ict.c */,
+				544668AD195E4491005D83DA /* ist_fsm.c */,
+				544668AE195E4491005D83DA /* ist.c */,
+				544668AF195E4491005D83DA /* Makefile */,
+				544668B0195E4491005D83DA /* Makefile.am */,
+				544668B1195E4491005D83DA /* Makefile.in */,
+				544668B2195E4491005D83DA /* nict_fsm.c */,
+				544668B3195E4491005D83DA /* nict.c */,
+				544668B4195E4491005D83DA /* nist_fsm.c */,
+				544668B5195E4491005D83DA /* nist.c */,
+				544668B6195E4491005D83DA /* osip_dialog.c */,
+				544668B7195E4491005D83DA /* osip_event.c */,
+				544668B8195E4491005D83DA /* osip_time.c */,
+				544668B9195E4491005D83DA /* osip_transaction.c */,
+				544668BA195E4491005D83DA /* osip.c */,
+				544668BB195E4491005D83DA /* port_condv.c */,
+				544668BC195E4491005D83DA /* port_fifo.c */,
+				544668BD195E4491005D83DA /* port_sema.c */,
+				544668BE195E4491005D83DA /* port_thread.c */,
+				544668BF195E4491005D83DA /* xixt.h */,
+				54466807195E4115005D83DA /* Supporting Files */,
+			);
+			path = osip2;
+			sourceTree = "<group>";
+		};
+		54466807195E4115005D83DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54466808195E4115005D83DA /* osip2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5446681A195E4115005D83DA /* osip2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				54466820195E4115005D83DA /* osip2Tests.m */,
+				5446681B195E4115005D83DA /* Supporting Files */,
+			);
+			path = osip2Tests;
+			sourceTree = "<group>";
+		};
+		5446681B195E4115005D83DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5446681C195E4115005D83DA /* osip2Tests-Info.plist */,
+				5446681D195E4115005D83DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54466800195E4115005D83DA /* osip2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54466824195E4115005D83DA /* Build configuration list for PBXNativeTarget "osip2" */;
+			buildPhases = (
+				544667FD195E4115005D83DA /* Sources */,
+				544667FE195E4115005D83DA /* Frameworks */,
+				544667FF195E4115005D83DA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = osip2;
+			productName = osip2;
+			productReference = 54466801195E4115005D83DA /* libosip2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		54466810195E4115005D83DA /* osip2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54466827195E4115005D83DA /* Build configuration list for PBXNativeTarget "osip2Tests" */;
+			buildPhases = (
+				5446680D195E4115005D83DA /* Sources */,
+				5446680E195E4115005D83DA /* Frameworks */,
+				5446680F195E4115005D83DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54466818195E4115005D83DA /* PBXTargetDependency */,
+			);
+			name = osip2Tests;
+			productName = osip2Tests;
+			productReference = 54466811195E4115005D83DA /* osip2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		544667F9195E4115005D83DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = uskee;
+			};
+			buildConfigurationList = 544667FC195E4115005D83DA /* Build configuration list for PBXProject "osip2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 544667F8195E4115005D83DA;
+			productRefGroup = 54466802195E4115005D83DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54466800195E4115005D83DA /* osip2 */,
+				54466810195E4115005D83DA /* osip2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5446680F195E4115005D83DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5446681F195E4115005D83DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		544667FD195E4115005D83DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544668C5195E4491005D83DA /* Makefile in Sources */,
+				544668D2195E4491005D83DA /* port_thread.c in Sources */,
+				544668D0195E4491005D83DA /* port_fifo.c in Sources */,
+				544668C4195E4491005D83DA /* ist.c in Sources */,
+				544668CA195E4491005D83DA /* osip_dialog.c in Sources */,
+				544668C2195E4491005D83DA /* ict.c in Sources */,
+				544668C8195E4491005D83DA /* nist_fsm.c in Sources */,
+				544668CE195E4491005D83DA /* osip.c in Sources */,
+				544668CD195E4491005D83DA /* osip_transaction.c in Sources */,
+				544668D1195E4491005D83DA /* port_sema.c in Sources */,
+				544668CB195E4491005D83DA /* osip_event.c in Sources */,
+				544668CC195E4491005D83DA /* osip_time.c in Sources */,
+				544668C6195E4491005D83DA /* nict_fsm.c in Sources */,
+				544668C9195E4491005D83DA /* nist.c in Sources */,
+				544668CF195E4491005D83DA /* port_condv.c in Sources */,
+				544668C0195E4491005D83DA /* fsm_misc.c in Sources */,
+				544668C7195E4491005D83DA /* nict.c in Sources */,
+				544668C1195E4491005D83DA /* ict_fsm.c in Sources */,
+				544668C3195E4491005D83DA /* ist_fsm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5446680D195E4115005D83DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54466821195E4115005D83DA /* osip2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54466818195E4115005D83DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54466800195E4115005D83DA /* osip2 */;
+			targetProxy = 54466817195E4115005D83DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5446681D195E4115005D83DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5446681E195E4115005D83DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54466822195E4115005D83DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54466823195E4115005D83DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54466825195E4115005D83DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/osip2.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osip2/osip2-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../include,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54466826195E4115005D83DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/osip2.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osip2/osip2-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../include,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		54466828195E4115005D83DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osip2/osip2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "osip2Tests/osip2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		54466829195E4115005D83DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osip2/osip2-Prefix.pch";
+				INFOPLIST_FILE = "osip2Tests/osip2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		544667FC195E4115005D83DA /* Build configuration list for PBXProject "osip2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54466822195E4115005D83DA /* Debug */,
+				54466823195E4115005D83DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54466824195E4115005D83DA /* Build configuration list for PBXNativeTarget "osip2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54466825195E4115005D83DA /* Debug */,
+				54466826195E4115005D83DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54466827195E4115005D83DA /* Build configuration list for PBXNativeTarget "osip2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54466828195E4115005D83DA /* Debug */,
+				54466829195E4115005D83DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 544667F9195E4115005D83DA /* Project object */;
+}
