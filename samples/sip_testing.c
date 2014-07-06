@@ -103,6 +103,7 @@ usage (void)
           "\n\t[required_options]\n"
           "\t-r --proxy\tsip:proxyhost[:port]\n"
           "\t-u --from\tsip:user@host[:port]\n"
+          "\t-t --to\tsip:user@host[:port]\n"
           "\n\t[optional_options]\n"
           "\t-c --contact\tsip:user@host[:port]\n"
           "\t-d --debug (log to stderr and do not fork)\n"
@@ -131,7 +132,6 @@ register_proc (void *arg)
 #else
     sleep (regparam->expiry / 2);
 #endif
-    syslog_wrapper(LOG_INFO, "[yzxu] send register\n");
     eXosip_lock (context_eXosip);
     reg = eXosip_register_send_register (context_eXosip, regparam->regid, NULL);
     if (0 > reg) {
@@ -149,6 +149,79 @@ register_proc (void *arg)
 }
 #endif
 
+void sendMessage(const char * from, const char * to, const char *message)
+{
+    int iret = 0;
+    int did = 0;
+    osip_message_t *info;
+
+    iret = eXosip_call_build_info (context_eXosip, did, &info);
+    if (iret == 0)
+    {
+        osip_message_set_content_type (info, "application/text");
+        osip_message_set_body (info, message, strlen(message));
+        iret = eXosip_call_send_request (context_eXosip, did, info);
+    }
+    syslog_wrapper(LOG_INFO, "sendMessage: iret = %d\n", iret);
+}
+
+void sendInvite(const char * from, const char * to, const char * subject)
+{
+    int iret = -1;
+    char sdp[4096];
+    char localip[128];
+    int cid = 0;
+    int port = 5060;
+    osip_message_t *invite = NULL;
+
+    if (!to) {
+        return;
+    }
+
+    osip_usleep (3000*1000);
+    iret = eXosip_call_build_initial_invite (context_eXosip, &invite, to, from, NULL, subject);
+    if (iret != OSIP_SUCCESS)
+    {
+        syslog_wrapper(LOG_INFO, "fail to build initial invite\n");
+        return;
+    }
+
+    //osip_message_set_supported (invite, "100rel");
+
+#if 0
+    eXosip_guess_localip (context_eXosip, AF_INET, localip, 128);
+
+    snprintf (sdp, 4096,
+            "v=0\r\n"
+            "o=josua 0 0 IN IP4 %s\r\n"
+            "s=conversation\r\n"
+            "c=IN IP4 %s\r\n"
+            "t=0 0\r\n"
+            "m=audio %d RTP/AVP 0 8 101\r\n"
+            "a=rtpmap:0 PCMU/8000\r\n"
+            "a=rtpmap:8 PCMA/8000\r\n"
+            "a=rtpmap:101 telephone-event/8000\r\n"
+            "a=fmtp:101 0-11\r\n", localip, localip, port); 
+
+    iret = osip_message_set_body (invite, sdp, strlen(sdp));
+    if (iret != OSIP_SUCCESS)
+    {
+        syslog_wrapper(LOG_INFO, "fail to set body\n");
+        return;
+    }
+
+    iret = osip_message_set_content_type (invite, "application/sdp");
+    if (iret != OSIP_SUCCESS)
+    {
+        syslog_wrapper(LOG_INFO, "fail to set content type\n");
+        return;
+    }
+#endif
+
+    cid = eXosip_call_send_initial_invite (context_eXosip, invite);
+    syslog_wrapper(LOG_INFO, "sendInvite: cid = %d\n", cid);
+}
+
 #ifdef _WIN32_WCE
 int WINAPI
 WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
@@ -161,6 +234,7 @@ main (int argc, char *argv[])
   int port = 5060;
   char *contact = NULL;
   char *fromuser = NULL;
+  char *touser = NULL;
   const char *localip = NULL;
   const char *firewallip = NULL;
   char *proxy = NULL;
@@ -180,10 +254,11 @@ main (int argc, char *argv[])
 #ifdef _WIN32_WCE
   proxy = osip_strdup ("sip:sip.antisip.com");
   fromuser = osip_strdup ("sip:jack@sip.antisip.com");
+  touser = osip_strdup ("sip:bob@sip.antisip.com");
 
 #else
   for (;;) {
-#define short_options "c:de:f:hl:p:r:u:U:P:"
+#define short_options "c:de:f:hl:p:r:u:t:U:P:"
 #ifdef _GNU_SOURCE
     int option_index = 0;
 
@@ -193,6 +268,7 @@ main (int argc, char *argv[])
       {"expiry", required_argument, NULL, 'e'},
       {"firewallip", required_argument, NULL, 'f'},
       {"from", required_argument, NULL, 'u'},
+      {"to", required_argument, NULL, 't'},
       {"help", no_argument, NULL, 'h'},
       {"localip", required_argument, NULL, 'l'},
       {"port", required_argument, NULL, 'p'},
@@ -248,6 +324,9 @@ main (int argc, char *argv[])
     case 'u':
       fromuser = optarg;
       break;
+    case 't':
+      touser = optarg;
+      break;
     case 'U':
       username = optarg;
       break;
@@ -278,6 +357,8 @@ main (int argc, char *argv[])
   syslog_wrapper (LOG_INFO, UA_STRING " up and running");
   syslog_wrapper (LOG_INFO, "proxy: %s", proxy);
   syslog_wrapper (LOG_INFO, "fromuser: %s", fromuser);
+  if (touser)
+    syslog_wrapper (LOG_INFO, "touser: %s", touser);
   syslog_wrapper (LOG_INFO, "contact: %s", contact);
   syslog_wrapper (LOG_INFO, "expiry: %d", regparam.expiry);
   syslog_wrapper (LOG_INFO, "local port: %d", port);
@@ -332,6 +413,7 @@ main (int argc, char *argv[])
     }
   }
 
+
 #ifndef OSIP_MONOTHREAD
   register_thread = osip_thread_create (20000, register_proc, &regparam);
   if (register_thread == NULL) {
@@ -359,6 +441,7 @@ main (int argc, char *argv[])
     switch (event->type) {
     case EXOSIP_REGISTRATION_SUCCESS:
       syslog_wrapper (LOG_INFO, "registrered successfully");
+      sendInvite(fromuser, touser, "invite call");
       break;
     case EXOSIP_REGISTRATION_FAILURE:
       regparam.auth = 1;

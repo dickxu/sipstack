@@ -748,7 +748,7 @@ eXosip_execute (struct eXosip_t *excontext)
 
     now = osip_getsystemtime (NULL);
 
-    lower_tv.tv_sec = 10;
+    lower_tv.tv_sec = 3;
 
     eXosip_lock (excontext);
     for (jr = excontext->j_reg; jr != NULL; jr = jr->next) {

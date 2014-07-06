@@ -19,7 +19,6 @@
 		544668C2195E4491005D83DA /* ict.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AC195E4491005D83DA /* ict.c */; };
 		544668C3195E4491005D83DA /* ist_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AD195E4491005D83DA /* ist_fsm.c */; };
 		544668C4195E4491005D83DA /* ist.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668AE195E4491005D83DA /* ist.c */; };
-		544668C5195E4491005D83DA /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 544668AF195E4491005D83DA /* Makefile */; };
 		544668C6195E4491005D83DA /* nict_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B2195E4491005D83DA /* nict_fsm.c */; };
 		544668C7195E4491005D83DA /* nict.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B3195E4491005D83DA /* nict.c */; };
 		544668C8195E4491005D83DA /* nist_fsm.c in Sources */ = {isa = PBXBuildFile; fileRef = 544668B4195E4491005D83DA /* nist_fsm.c */; };
@@ -73,9 +72,6 @@
 		544668AC195E4491005D83DA /* ict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ict.c; path = ../../../../src/osip2/ict.c; sourceTree = "<group>"; };
 		544668AD195E4491005D83DA /* ist_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ist_fsm.c; path = ../../../../src/osip2/ist_fsm.c; sourceTree = "<group>"; };
 		544668AE195E4491005D83DA /* ist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ist.c; path = ../../../../src/osip2/ist.c; sourceTree = "<group>"; };
-		544668AF195E4491005D83DA /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = ../../../../src/osip2/Makefile; sourceTree = "<group>"; };
-		544668B0195E4491005D83DA /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.am; path = ../../../../src/osip2/Makefile.am; sourceTree = "<group>"; };
-		544668B1195E4491005D83DA /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.in; path = ../../../../src/osip2/Makefile.in; sourceTree = "<group>"; };
 		544668B2195E4491005D83DA /* nict_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nict_fsm.c; path = ../../../../src/osip2/nict_fsm.c; sourceTree = "<group>"; };
 		544668B3195E4491005D83DA /* nict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nict.c; path = ../../../../src/osip2/nict.c; sourceTree = "<group>"; };
 		544668B4195E4491005D83DA /* nist_fsm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nist_fsm.c; path = ../../../../src/osip2/nist_fsm.c; sourceTree = "<group>"; };
@@ -153,9 +149,6 @@
 				544668AC195E4491005D83DA /* ict.c */,
 				544668AD195E4491005D83DA /* ist_fsm.c */,
 				544668AE195E4491005D83DA /* ist.c */,
-				544668AF195E4491005D83DA /* Makefile */,
-				544668B0195E4491005D83DA /* Makefile.am */,
-				544668B1195E4491005D83DA /* Makefile.in */,
 				544668B2195E4491005D83DA /* nict_fsm.c */,
 				544668B3195E4491005D83DA /* nict.c */,
 				544668B4195E4491005D83DA /* nist_fsm.c */,
@@ -282,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544668C5195E4491005D83DA /* Makefile in Sources */,
 				544668D2195E4491005D83DA /* port_thread.c in Sources */,
 				544668D0195E4491005D83DA /* port_fifo.c in Sources */,
 				544668C4195E4491005D83DA /* ist.c in Sources */,
@@ -491,6 +483,7 @@
 				54466826195E4115005D83DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54466827195E4115005D83DA /* Build configuration list for PBXNativeTarget "osip2Tests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +492,7 @@
 				54466829195E4115005D83DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,6 +29,6 @@ cfg_ios ()
     export CXX="$CXX"
     export CFLAGS="$CFLAGS"
     export LDFLAGS="$LDFLAGS"
-    ./configure --host=arm --disable-shared "$OPTIONS"
+    ./configure --host=arm --disable-shared $OPTIONS
 }
 

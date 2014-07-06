@@ -126,6 +126,15 @@
 		544667D2195E404C005D83DA /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rijndael.h; path = ../../../../src/rijndael.h; sourceTree = "<group>"; };
 		544667D3195E404C005D83DA /* sdp_offans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sdp_offans.c; path = ../../../../src/sdp_offans.c; sourceTree = "<group>"; };
 		544667D4195E404C005D83DA /* udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = udp.c; path = ../../../../src/udp.c; sourceTree = "<group>"; };
+		54C549281969314800F0B0A3 /* eX_call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_call.h; sourceTree = "<group>"; };
+		54C549291969314800F0B0A3 /* eX_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_message.h; sourceTree = "<group>"; };
+		54C5492A1969314800F0B0A3 /* eX_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_options.h; sourceTree = "<group>"; };
+		54C5492B1969314800F0B0A3 /* eX_publish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_publish.h; sourceTree = "<group>"; };
+		54C5492C1969314800F0B0A3 /* eX_refer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_refer.h; sourceTree = "<group>"; };
+		54C5492D1969314800F0B0A3 /* eX_register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_register.h; sourceTree = "<group>"; };
+		54C5492E1969314800F0B0A3 /* eX_setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_setup.h; sourceTree = "<group>"; };
+		54C5492F1969314800F0B0A3 /* eX_subscribe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eX_subscribe.h; sourceTree = "<group>"; };
+		54C549301969314800F0B0A3 /* eXosip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eXosip.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +163,7 @@
 		54466778195E3F78005D83DA = {
 			isa = PBXGroup;
 			children = (
+				54C549261969314800F0B0A3 /* include */,
 				54466786195E3F78005D83DA /* exosip */,
 				5446679A195E3F78005D83DA /* exosipTests */,
 				54466783195E3F78005D83DA /* Frameworks */,
@@ -255,6 +265,31 @@
 				5446679D195E3F78005D83DA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54C549261969314800F0B0A3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				54C549271969314800F0B0A3 /* eXosip2 */,
+			);
+			name = include;
+			path = ../../../include;
+			sourceTree = "<group>";
+		};
+		54C549271969314800F0B0A3 /* eXosip2 */ = {
+			isa = PBXGroup;
+			children = (
+				54C549281969314800F0B0A3 /* eX_call.h */,
+				54C549291969314800F0B0A3 /* eX_message.h */,
+				54C5492A1969314800F0B0A3 /* eX_options.h */,
+				54C5492B1969314800F0B0A3 /* eX_publish.h */,
+				54C5492C1969314800F0B0A3 /* eX_refer.h */,
+				54C5492D1969314800F0B0A3 /* eX_register.h */,
+				54C5492E1969314800F0B0A3 /* eX_setup.h */,
+				54C5492F1969314800F0B0A3 /* eX_subscribe.h */,
+				54C549301969314800F0B0A3 /* eXosip.h */,
+			);
+			path = eXosip2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
