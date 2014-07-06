@@ -8,4 +8,5 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#define ENABLE_TRACE
 #include "../../../../osip-config.h"

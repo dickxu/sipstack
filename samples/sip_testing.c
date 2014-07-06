@@ -283,7 +283,7 @@ main (int argc, char *argv[])
   syslog_wrapper (LOG_INFO, "local port: %d", port);
 
   if (debug > 0)
-    TRACE_INITIALIZE (6, NULL);
+    TRACE_INITIALIZE (7, NULL);
 
   context_eXosip = eXosip_malloc ();
   if (eXosip_init (context_eXosip)) {
