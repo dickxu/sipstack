@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54C5481A1968EB0900F0B0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548191968EB0900F0B0A3 /* Foundation.framework */; };
+		54C548281968EB0900F0B0A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548271968EB0900F0B0A3 /* XCTest.framework */; };
+		54C548291968EB0900F0B0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548191968EB0900F0B0A3 /* Foundation.framework */; };
+		54C5482B1968EB0900F0B0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C5482A1968EB0900F0B0A3 /* UIKit.framework */; };
+		54C5482E1968EB0900F0B0A3 /* libbellesip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548161968EB0900F0B0A3 /* libbellesip.a */; };
+		54C548341968EB0900F0B0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54C548321968EB0900F0B0A3 /* InfoPlist.strings */; };
+		54C548361968EB0900F0B0A3 /* bellesipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C548351968EB0900F0B0A3 /* bellesipTests.m */; };
+		54C5488E1968EB4900F0B0A3 /* auth_event.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5483F1968EB4900F0B0A3 /* auth_event.c */; };
+		54C5488F1968EB4900F0B0A3 /* auth_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548401968EB4900F0B0A3 /* auth_helper.c */; };
+		54C548901968EB4900F0B0A3 /* backgroundtask.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C548411968EB4900F0B0A3 /* backgroundtask.m */; };
+		54C548911968EB4900F0B0A3 /* belle_sdp_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548421968EB4900F0B0A3 /* belle_sdp_impl.c */; };
+		54C548921968EB4900F0B0A3 /* belle_sip_dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548431968EB4900F0B0A3 /* belle_sip_dict.c */; };
+		54C548931968EB4900F0B0A3 /* belle_sip_headers_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548441968EB4900F0B0A3 /* belle_sip_headers_impl.c */; };
+		54C548941968EB4900F0B0A3 /* belle_sip_loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548461968EB4900F0B0A3 /* belle_sip_loop.c */; };
+		54C548951968EB4900F0B0A3 /* belle_sip_object.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548471968EB4900F0B0A3 /* belle_sip_object.c */; };
+		54C548961968EB4900F0B0A3 /* belle_sip_parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548481968EB4900F0B0A3 /* belle_sip_parameters.c */; };
+		54C548971968EB4900F0B0A3 /* belle_sip_resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548491968EB4900F0B0A3 /* belle_sip_resolver.c */; };
+		54C548981968EB4900F0B0A3 /* belle_sip_uri_impl.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5484A1968EB4900F0B0A3 /* belle_sip_uri_impl.c */; };
+		54C548991968EB4900F0B0A3 /* belle_sip_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5484B1968EB4900F0B0A3 /* belle_sip_utils.c */; };
+		54C5489A1968EB4900F0B0A3 /* bodyhandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5484C1968EB4900F0B0A3 /* bodyhandler.c */; };
+		54C5489B1968EB4900F0B0A3 /* channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5484D1968EB4900F0B0A3 /* channel.c */; };
+		54C5489C1968EB4900F0B0A3 /* clock_gettime.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5484F1968EB4900F0B0A3 /* clock_gettime.c */; };
+		54C5489D1968EB4900F0B0A3 /* dialog.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548521968EB4900F0B0A3 /* dialog.c */; };
+		54C5489E1968EB4900F0B0A3 /* dns.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548531968EB4900F0B0A3 /* dns.c */; };
+		54C5489F1968EB4900F0B0A3 /* generic-uri.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548551968EB4900F0B0A3 /* generic-uri.c */; };
+		54C548A11968EB4900F0B0A3 /* http-listener.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548621968EB4900F0B0A3 /* http-listener.c */; };
+		54C548A21968EB4900F0B0A3 /* http-message.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548631968EB4900F0B0A3 /* http-message.c */; };
+		54C548A31968EB4900F0B0A3 /* http-provider.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548641968EB4900F0B0A3 /* http-provider.c */; };
+		54C548A41968EB4900F0B0A3 /* ict.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548651968EB4900F0B0A3 /* ict.c */; };
+		54C548A51968EB4900F0B0A3 /* ist.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548661968EB4900F0B0A3 /* ist.c */; };
+		54C548A61968EB4900F0B0A3 /* listeningpoint.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548681968EB4900F0B0A3 /* listeningpoint.c */; };
+		54C548A81968EB4900F0B0A3 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5486C1968EB4900F0B0A3 /* md5.c */; };
+		54C548A91968EB4900F0B0A3 /* message.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5486E1968EB4900F0B0A3 /* message.c */; };
+		54C548AA1968EB4900F0B0A3 /* nict.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5486F1968EB4900F0B0A3 /* nict.c */; };
+		54C548AB1968EB4900F0B0A3 /* nist.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548701968EB4900F0B0A3 /* nist.c */; };
+		54C548AC1968EB4900F0B0A3 /* port.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548721968EB4900F0B0A3 /* port.c */; };
+		54C548AD1968EB4900F0B0A3 /* provider.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548741968EB4900F0B0A3 /* provider.c */; };
+		54C548AE1968EB4900F0B0A3 /* refresher.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548751968EB4900F0B0A3 /* refresher.c */; };
+		54C548AF1968EB4900F0B0A3 /* siplistener.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548761968EB4900F0B0A3 /* siplistener.c */; };
+		54C548B01968EB4900F0B0A3 /* sipstack.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548771968EB4900F0B0A3 /* sipstack.c */; };
+		54C548B11968EB4900F0B0A3 /* transaction.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548781968EB4900F0B0A3 /* transaction.c */; };
+		54C548B21968EB4900F0B0A3 /* stream_channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548841968EB4900F0B0A3 /* stream_channel.c */; };
+		54C548B31968EB4900F0B0A3 /* stream_listeningpoint.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548861968EB4900F0B0A3 /* stream_listeningpoint.c */; };
+		54C548B41968EB4900F0B0A3 /* tls_channel_polarssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548871968EB4900F0B0A3 /* tls_channel_polarssl.c */; };
+		54C548B51968EB4900F0B0A3 /* tls_listeningpoint_polarssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548881968EB4900F0B0A3 /* tls_listeningpoint_polarssl.c */; };
+		54C548B61968EB4900F0B0A3 /* tunnel_channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548891968EB4900F0B0A3 /* tunnel_channel.c */; };
+		54C548B71968EB4900F0B0A3 /* tunnel_listeningpoint.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5488A1968EB4900F0B0A3 /* tunnel_listeningpoint.c */; };
+		54C548B81968EB4900F0B0A3 /* tunnel_wrapper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 54C5488B1968EB4900F0B0A3 /* tunnel_wrapper.cc */; };
+		54C548B91968EB4900F0B0A3 /* udp_channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5488C1968EB4900F0B0A3 /* udp_channel.c */; };
+		54C548BA1968EB4900F0B0A3 /* udp_listeningpoint.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C5488D1968EB4900F0B0A3 /* udp_listeningpoint.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54C5482C1968EB0900F0B0A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C5480E1968EB0900F0B0A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C548151968EB0900F0B0A3;
+			remoteInfo = bellesip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54C548141968EB0900F0B0A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54C548161968EB0900F0B0A3 /* libbellesip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbellesip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C548191968EB0900F0B0A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54C5481D1968EB0900F0B0A3 /* bellesip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bellesip-Prefix.pch"; sourceTree = "<group>"; };
+		54C548261968EB0900F0B0A3 /* bellesipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bellesipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C548271968EB0900F0B0A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		54C5482A1968EB0900F0B0A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		54C548311968EB0900F0B0A3 /* bellesipTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bellesipTests-Info.plist"; sourceTree = "<group>"; };
+		54C548331968EB0900F0B0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54C548351968EB0900F0B0A3 /* bellesipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bellesipTests.m; sourceTree = "<group>"; };
+		54C5483F1968EB4900F0B0A3 /* auth_event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auth_event.c; path = ../../../../src/auth_event.c; sourceTree = "<group>"; };
+		54C548401968EB4900F0B0A3 /* auth_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auth_helper.c; path = ../../../../src/auth_helper.c; sourceTree = "<group>"; };
+		54C548411968EB4900F0B0A3 /* backgroundtask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = backgroundtask.m; path = ../../../../src/backgroundtask.m; sourceTree = "<group>"; };
+		54C548421968EB4900F0B0A3 /* belle_sdp_impl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sdp_impl.c; path = ../../../../src/belle_sdp_impl.c; sourceTree = "<group>"; };
+		54C548431968EB4900F0B0A3 /* belle_sip_dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_dict.c; path = ../../../../src/belle_sip_dict.c; sourceTree = "<group>"; };
+		54C548441968EB4900F0B0A3 /* belle_sip_headers_impl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_headers_impl.c; path = ../../../../src/belle_sip_headers_impl.c; sourceTree = "<group>"; };
+		54C548451968EB4900F0B0A3 /* belle_sip_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = belle_sip_internal.h; path = ../../../../src/belle_sip_internal.h; sourceTree = "<group>"; };
+		54C548461968EB4900F0B0A3 /* belle_sip_loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_loop.c; path = ../../../../src/belle_sip_loop.c; sourceTree = "<group>"; };
+		54C548471968EB4900F0B0A3 /* belle_sip_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_object.c; path = ../../../../src/belle_sip_object.c; sourceTree = "<group>"; };
+		54C548481968EB4900F0B0A3 /* belle_sip_parameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_parameters.c; path = ../../../../src/belle_sip_parameters.c; sourceTree = "<group>"; };
+		54C548491968EB4900F0B0A3 /* belle_sip_resolver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_resolver.c; path = ../../../../src/belle_sip_resolver.c; sourceTree = "<group>"; };
+		54C5484A1968EB4900F0B0A3 /* belle_sip_uri_impl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_uri_impl.c; path = ../../../../src/belle_sip_uri_impl.c; sourceTree = "<group>"; };
+		54C5484B1968EB4900F0B0A3 /* belle_sip_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = belle_sip_utils.c; path = ../../../../src/belle_sip_utils.c; sourceTree = "<group>"; };
+		54C5484C1968EB4900F0B0A3 /* bodyhandler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bodyhandler.c; path = ../../../../src/bodyhandler.c; sourceTree = "<group>"; };
+		54C5484D1968EB4900F0B0A3 /* channel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = channel.c; path = ../../../../src/channel.c; sourceTree = "<group>"; };
+		54C5484E1968EB4900F0B0A3 /* channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = channel.h; path = ../../../../src/channel.h; sourceTree = "<group>"; };
+		54C5484F1968EB4900F0B0A3 /* clock_gettime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = clock_gettime.c; path = ../../../../src/clock_gettime.c; sourceTree = "<group>"; };
+		54C548501968EB4900F0B0A3 /* clock_gettime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clock_gettime.h; path = ../../../../src/clock_gettime.h; sourceTree = "<group>"; };
+		54C548521968EB4900F0B0A3 /* dialog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dialog.c; path = ../../../../src/dialog.c; sourceTree = "<group>"; };
+		54C548531968EB4900F0B0A3 /* dns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dns.c; path = ../../../../src/dns.c; sourceTree = "<group>"; };
+		54C548541968EB4900F0B0A3 /* dns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dns.h; path = ../../../../src/dns.h; sourceTree = "<group>"; };
+		54C548551968EB4900F0B0A3 /* generic-uri.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "generic-uri.c"; path = "../../../../src/generic-uri.c"; sourceTree = "<group>"; };
+		54C548621968EB4900F0B0A3 /* http-listener.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "http-listener.c"; path = "../../../../src/http-listener.c"; sourceTree = "<group>"; };
+		54C548631968EB4900F0B0A3 /* http-message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "http-message.c"; path = "../../../../src/http-message.c"; sourceTree = "<group>"; };
+		54C548641968EB4900F0B0A3 /* http-provider.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "http-provider.c"; path = "../../../../src/http-provider.c"; sourceTree = "<group>"; };
+		54C548651968EB4900F0B0A3 /* ict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ict.c; path = ../../../../src/ict.c; sourceTree = "<group>"; };
+		54C548661968EB4900F0B0A3 /* ist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ist.c; path = ../../../../src/ist.c; sourceTree = "<group>"; };
+		54C548671968EB4900F0B0A3 /* listeningpoint_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = listeningpoint_internal.h; path = ../../../../src/listeningpoint_internal.h; sourceTree = "<group>"; };
+		54C548681968EB4900F0B0A3 /* listeningpoint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = listeningpoint.c; path = ../../../../src/listeningpoint.c; sourceTree = "<group>"; };
+		54C5486C1968EB4900F0B0A3 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = md5.c; path = ../../../../src/md5.c; sourceTree = "<group>"; };
+		54C5486D1968EB4900F0B0A3 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../../../../src/md5.h; sourceTree = "<group>"; };
+		54C5486E1968EB4900F0B0A3 /* message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = message.c; path = ../../../../src/message.c; sourceTree = "<group>"; };
+		54C5486F1968EB4900F0B0A3 /* nict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nict.c; path = ../../../../src/nict.c; sourceTree = "<group>"; };
+		54C548701968EB4900F0B0A3 /* nist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nist.c; path = ../../../../src/nist.c; sourceTree = "<group>"; };
+		54C548711968EB4900F0B0A3 /* parserutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parserutils.h; path = ../../../../src/parserutils.h; sourceTree = "<group>"; };
+		54C548721968EB4900F0B0A3 /* port.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = port.c; path = ../../../../src/port.c; sourceTree = "<group>"; };
+		54C548731968EB4900F0B0A3 /* port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = port.h; path = ../../../../src/port.h; sourceTree = "<group>"; };
+		54C548741968EB4900F0B0A3 /* provider.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = provider.c; path = ../../../../src/provider.c; sourceTree = "<group>"; };
+		54C548751968EB4900F0B0A3 /* refresher.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = refresher.c; path = ../../../../src/refresher.c; sourceTree = "<group>"; };
+		54C548761968EB4900F0B0A3 /* siplistener.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = siplistener.c; path = ../../../../src/siplistener.c; sourceTree = "<group>"; };
+		54C548771968EB4900F0B0A3 /* sipstack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sipstack.c; path = ../../../../src/sipstack.c; sourceTree = "<group>"; };
+		54C548781968EB4900F0B0A3 /* transaction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = transaction.c; path = ../../../../src/transaction.c; sourceTree = "<group>"; };
+		54C548841968EB4900F0B0A3 /* stream_channel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream_channel.c; sourceTree = "<group>"; };
+		54C548851968EB4900F0B0A3 /* stream_channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_channel.h; sourceTree = "<group>"; };
+		54C548861968EB4900F0B0A3 /* stream_listeningpoint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream_listeningpoint.c; sourceTree = "<group>"; };
+		54C548871968EB4900F0B0A3 /* tls_channel_polarssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tls_channel_polarssl.c; sourceTree = "<group>"; };
+		54C548881968EB4900F0B0A3 /* tls_listeningpoint_polarssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tls_listeningpoint_polarssl.c; sourceTree = "<group>"; };
+		54C548891968EB4900F0B0A3 /* tunnel_channel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tunnel_channel.c; sourceTree = "<group>"; };
+		54C5488A1968EB4900F0B0A3 /* tunnel_listeningpoint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tunnel_listeningpoint.c; sourceTree = "<group>"; };
+		54C5488B1968EB4900F0B0A3 /* tunnel_wrapper.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tunnel_wrapper.cc; sourceTree = "<group>"; };
+		54C5488C1968EB4900F0B0A3 /* udp_channel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp_channel.c; sourceTree = "<group>"; };
+		54C5488D1968EB4900F0B0A3 /* udp_listeningpoint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp_listeningpoint.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54C548131968EB0900F0B0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C5481A1968EB0900F0B0A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C548231968EB0900F0B0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548281968EB0900F0B0A3 /* XCTest.framework in Frameworks */,
+				54C5482B1968EB0900F0B0A3 /* UIKit.framework in Frameworks */,
+				54C548291968EB0900F0B0A3 /* Foundation.framework in Frameworks */,
+				54C5482E1968EB0900F0B0A3 /* libbellesip.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54C5480D1968EB0900F0B0A3 = {
+			isa = PBXGroup;
+			children = (
+				54C5481B1968EB0900F0B0A3 /* bellesip */,
+				54C5482F1968EB0900F0B0A3 /* bellesipTests */,
+				54C548181968EB0900F0B0A3 /* Frameworks */,
+				54C548171968EB0900F0B0A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54C548171968EB0900F0B0A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54C548161968EB0900F0B0A3 /* libbellesip.a */,
+				54C548261968EB0900F0B0A3 /* bellesipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C548181968EB0900F0B0A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54C548191968EB0900F0B0A3 /* Foundation.framework */,
+				54C548271968EB0900F0B0A3 /* XCTest.framework */,
+				54C5482A1968EB0900F0B0A3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54C5481B1968EB0900F0B0A3 /* bellesip */ = {
+			isa = PBXGroup;
+			children = (
+				54C5483F1968EB4900F0B0A3 /* auth_event.c */,
+				54C548401968EB4900F0B0A3 /* auth_helper.c */,
+				54C548411968EB4900F0B0A3 /* backgroundtask.m */,
+				54C548421968EB4900F0B0A3 /* belle_sdp_impl.c */,
+				54C548431968EB4900F0B0A3 /* belle_sip_dict.c */,
+				54C548441968EB4900F0B0A3 /* belle_sip_headers_impl.c */,
+				54C548451968EB4900F0B0A3 /* belle_sip_internal.h */,
+				54C548461968EB4900F0B0A3 /* belle_sip_loop.c */,
+				54C548471968EB4900F0B0A3 /* belle_sip_object.c */,
+				54C548481968EB4900F0B0A3 /* belle_sip_parameters.c */,
+				54C548491968EB4900F0B0A3 /* belle_sip_resolver.c */,
+				54C5484A1968EB4900F0B0A3 /* belle_sip_uri_impl.c */,
+				54C5484B1968EB4900F0B0A3 /* belle_sip_utils.c */,
+				54C5484C1968EB4900F0B0A3 /* bodyhandler.c */,
+				54C5484D1968EB4900F0B0A3 /* channel.c */,
+				54C5484E1968EB4900F0B0A3 /* channel.h */,
+				54C5484F1968EB4900F0B0A3 /* clock_gettime.c */,
+				54C548501968EB4900F0B0A3 /* clock_gettime.h */,
+				54C548521968EB4900F0B0A3 /* dialog.c */,
+				54C548531968EB4900F0B0A3 /* dns.c */,
+				54C548541968EB4900F0B0A3 /* dns.h */,
+				54C548551968EB4900F0B0A3 /* generic-uri.c */,
+				54C548621968EB4900F0B0A3 /* http-listener.c */,
+				54C548631968EB4900F0B0A3 /* http-message.c */,
+				54C548641968EB4900F0B0A3 /* http-provider.c */,
+				54C548651968EB4900F0B0A3 /* ict.c */,
+				54C548661968EB4900F0B0A3 /* ist.c */,
+				54C548671968EB4900F0B0A3 /* listeningpoint_internal.h */,
+				54C548681968EB4900F0B0A3 /* listeningpoint.c */,
+				54C5486C1968EB4900F0B0A3 /* md5.c */,
+				54C5486D1968EB4900F0B0A3 /* md5.h */,
+				54C5486E1968EB4900F0B0A3 /* message.c */,
+				54C5486F1968EB4900F0B0A3 /* nict.c */,
+				54C548701968EB4900F0B0A3 /* nist.c */,
+				54C548711968EB4900F0B0A3 /* parserutils.h */,
+				54C548721968EB4900F0B0A3 /* port.c */,
+				54C548731968EB4900F0B0A3 /* port.h */,
+				54C548741968EB4900F0B0A3 /* provider.c */,
+				54C548751968EB4900F0B0A3 /* refresher.c */,
+				54C548761968EB4900F0B0A3 /* siplistener.c */,
+				54C548771968EB4900F0B0A3 /* sipstack.c */,
+				54C548781968EB4900F0B0A3 /* transaction.c */,
+				54C548791968EB4900F0B0A3 /* transports */,
+				54C5481C1968EB0900F0B0A3 /* Supporting Files */,
+			);
+			path = bellesip;
+			sourceTree = "<group>";
+		};
+		54C5481C1968EB0900F0B0A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54C5481D1968EB0900F0B0A3 /* bellesip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54C5482F1968EB0900F0B0A3 /* bellesipTests */ = {
+			isa = PBXGroup;
+			children = (
+				54C548351968EB0900F0B0A3 /* bellesipTests.m */,
+				54C548301968EB0900F0B0A3 /* Supporting Files */,
+			);
+			path = bellesipTests;
+			sourceTree = "<group>";
+		};
+		54C548301968EB0900F0B0A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54C548311968EB0900F0B0A3 /* bellesipTests-Info.plist */,
+				54C548321968EB0900F0B0A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54C548791968EB4900F0B0A3 /* transports */ = {
+			isa = PBXGroup;
+			children = (
+				54C548841968EB4900F0B0A3 /* stream_channel.c */,
+				54C548851968EB4900F0B0A3 /* stream_channel.h */,
+				54C548861968EB4900F0B0A3 /* stream_listeningpoint.c */,
+				54C548871968EB4900F0B0A3 /* tls_channel_polarssl.c */,
+				54C548881968EB4900F0B0A3 /* tls_listeningpoint_polarssl.c */,
+				54C548891968EB4900F0B0A3 /* tunnel_channel.c */,
+				54C5488A1968EB4900F0B0A3 /* tunnel_listeningpoint.c */,
+				54C5488B1968EB4900F0B0A3 /* tunnel_wrapper.cc */,
+				54C5488C1968EB4900F0B0A3 /* udp_channel.c */,
+				54C5488D1968EB4900F0B0A3 /* udp_listeningpoint.c */,
+			);
+			name = transports;
+			path = ../../../../src/transports;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54C548151968EB0900F0B0A3 /* bellesip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C548391968EB0900F0B0A3 /* Build configuration list for PBXNativeTarget "bellesip" */;
+			buildPhases = (
+				54C548121968EB0900F0B0A3 /* Sources */,
+				54C548131968EB0900F0B0A3 /* Frameworks */,
+				54C548141968EB0900F0B0A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bellesip;
+			productName = bellesip;
+			productReference = 54C548161968EB0900F0B0A3 /* libbellesip.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		54C548251968EB0900F0B0A3 /* bellesipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C5483C1968EB0900F0B0A3 /* Build configuration list for PBXNativeTarget "bellesipTests" */;
+			buildPhases = (
+				54C548221968EB0900F0B0A3 /* Sources */,
+				54C548231968EB0900F0B0A3 /* Frameworks */,
+				54C548241968EB0900F0B0A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C5482D1968EB0900F0B0A3 /* PBXTargetDependency */,
+			);
+			name = bellesipTests;
+			productName = bellesipTests;
+			productReference = 54C548261968EB0900F0B0A3 /* bellesipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54C5480E1968EB0900F0B0A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = uskee;
+			};
+			buildConfigurationList = 54C548111968EB0900F0B0A3 /* Build configuration list for PBXProject "bellesip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54C5480D1968EB0900F0B0A3;
+			productRefGroup = 54C548171968EB0900F0B0A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54C548151968EB0900F0B0A3 /* bellesip */,
+				54C548251968EB0900F0B0A3 /* bellesipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54C548241968EB0900F0B0A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548341968EB0900F0B0A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54C548121968EB0900F0B0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C5489E1968EB4900F0B0A3 /* dns.c in Sources */,
+				54C548951968EB4900F0B0A3 /* belle_sip_object.c in Sources */,
+				54C548B21968EB4900F0B0A3 /* stream_channel.c in Sources */,
+				54C548991968EB4900F0B0A3 /* belle_sip_utils.c in Sources */,
+				54C548B71968EB4900F0B0A3 /* tunnel_listeningpoint.c in Sources */,
+				54C5489C1968EB4900F0B0A3 /* clock_gettime.c in Sources */,
+				54C548AB1968EB4900F0B0A3 /* nist.c in Sources */,
+				54C548AD1968EB4900F0B0A3 /* provider.c in Sources */,
+				54C5489A1968EB4900F0B0A3 /* bodyhandler.c in Sources */,
+				54C548A81968EB4900F0B0A3 /* md5.c in Sources */,
+				54C548A51968EB4900F0B0A3 /* ist.c in Sources */,
+				54C548911968EB4900F0B0A3 /* belle_sdp_impl.c in Sources */,
+				54C548B81968EB4900F0B0A3 /* tunnel_wrapper.cc in Sources */,
+				54C548A11968EB4900F0B0A3 /* http-listener.c in Sources */,
+				54C5488E1968EB4900F0B0A3 /* auth_event.c in Sources */,
+				54C548B51968EB4900F0B0A3 /* tls_listeningpoint_polarssl.c in Sources */,
+				54C548B31968EB4900F0B0A3 /* stream_listeningpoint.c in Sources */,
+				54C548BA1968EB4900F0B0A3 /* udp_listeningpoint.c in Sources */,
+				54C548A21968EB4900F0B0A3 /* http-message.c in Sources */,
+				54C548931968EB4900F0B0A3 /* belle_sip_headers_impl.c in Sources */,
+				54C548A41968EB4900F0B0A3 /* ict.c in Sources */,
+				54C548A91968EB4900F0B0A3 /* message.c in Sources */,
+				54C548B61968EB4900F0B0A3 /* tunnel_channel.c in Sources */,
+				54C548B01968EB4900F0B0A3 /* sipstack.c in Sources */,
+				54C548981968EB4900F0B0A3 /* belle_sip_uri_impl.c in Sources */,
+				54C548A61968EB4900F0B0A3 /* listeningpoint.c in Sources */,
+				54C548A31968EB4900F0B0A3 /* http-provider.c in Sources */,
+				54C5488F1968EB4900F0B0A3 /* auth_helper.c in Sources */,
+				54C5489D1968EB4900F0B0A3 /* dialog.c in Sources */,
+				54C548971968EB4900F0B0A3 /* belle_sip_resolver.c in Sources */,
+				54C548921968EB4900F0B0A3 /* belle_sip_dict.c in Sources */,
+				54C548AC1968EB4900F0B0A3 /* port.c in Sources */,
+				54C548AF1968EB4900F0B0A3 /* siplistener.c in Sources */,
+				54C548B11968EB4900F0B0A3 /* transaction.c in Sources */,
+				54C548B91968EB4900F0B0A3 /* udp_channel.c in Sources */,
+				54C548B41968EB4900F0B0A3 /* tls_channel_polarssl.c in Sources */,
+				54C548AA1968EB4900F0B0A3 /* nict.c in Sources */,
+				54C548961968EB4900F0B0A3 /* belle_sip_parameters.c in Sources */,
+				54C548901968EB4900F0B0A3 /* backgroundtask.m in Sources */,
+				54C548941968EB4900F0B0A3 /* belle_sip_loop.c in Sources */,
+				54C5489F1968EB4900F0B0A3 /* generic-uri.c in Sources */,
+				54C548AE1968EB4900F0B0A3 /* refresher.c in Sources */,
+				54C5489B1968EB4900F0B0A3 /* channel.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C548221968EB0900F0B0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548361968EB0900F0B0A3 /* bellesipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C5482D1968EB0900F0B0A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C548151968EB0900F0B0A3 /* bellesip */;
+			targetProxy = 54C5482C1968EB0900F0B0A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54C548321968EB0900F0B0A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54C548331968EB0900F0B0A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54C548371968EB0900F0B0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54C548381968EB0900F0B0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C5483A1968EB0900F0B0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/bellesip.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bellesip/bellesip-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../include",
+					"$(SRCROOT)/../../../",
+					"$(SRCROOT)/../../../../antlr3//runtime/C/include",
+					"$(SRCROOT)/../../../../antlr3//runtime/C",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54C5483B1968EB0900F0B0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/bellesip.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bellesip/bellesip-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../include",
+					"$(SRCROOT)/../../../",
+					"$(SRCROOT)/../../../../antlr3//runtime/C/include",
+					"$(SRCROOT)/../../../../antlr3//runtime/C",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		54C5483D1968EB0900F0B0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bellesip/bellesip-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bellesipTests/bellesipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		54C5483E1968EB0900F0B0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "bellesip/bellesip-Prefix.pch";
+				INFOPLIST_FILE = "bellesipTests/bellesipTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54C548111968EB0900F0B0A3 /* Build configuration list for PBXProject "bellesip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C548371968EB0900F0B0A3 /* Debug */,
+				54C548381968EB0900F0B0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C548391968EB0900F0B0A3 /* Build configuration list for PBXNativeTarget "bellesip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C5483A1968EB0900F0B0A3 /* Debug */,
+				54C5483B1968EB0900F0B0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54C5483C1968EB0900F0B0A3 /* Build configuration list for PBXNativeTarget "bellesipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C5483D1968EB0900F0B0A3 /* Debug */,
+				54C5483E1968EB0900F0B0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54C5480E1968EB0900F0B0A3 /* Project object */;
+}

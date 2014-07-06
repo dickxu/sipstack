@@ -20,6 +20,8 @@
 #include "config.h"
 #endif
 
+#ifdef HAVE_TUNNEL
+
 #include <tunnel/client.hh>
 
 using namespace belledonnecomm;
@@ -49,3 +51,5 @@ extern "C" int tunnel_socket_recvfrom(void *tunnelsocket, void *buffer, size_t b
 	TunnelSocket *ts = static_cast<TunnelSocket *>(tunnelsocket);
 	return ts->recvfrom(buffer, bufsize, src, socklen);
 }
+
+#endif
