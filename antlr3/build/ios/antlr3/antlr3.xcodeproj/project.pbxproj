@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54C548C91968EF8F00F0B0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548C81968EF8F00F0B0A3 /* Foundation.framework */; };
+		54C548D71968EF8F00F0B0A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548D61968EF8F00F0B0A3 /* XCTest.framework */; };
+		54C548D81968EF8F00F0B0A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548C81968EF8F00F0B0A3 /* Foundation.framework */; };
+		54C548DA1968EF8F00F0B0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548D91968EF8F00F0B0A3 /* UIKit.framework */; };
+		54C548DD1968EF8F00F0B0A3 /* libantlr3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C548C51968EF8F00F0B0A3 /* libantlr3.a */; };
+		54C548E31968EF8F00F0B0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54C548E11968EF8F00F0B0A3 /* InfoPlist.strings */; };
+		54C548E51968EF8F00F0B0A3 /* antlr3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C548E41968EF8F00F0B0A3 /* antlr3Tests.m */; };
+		54C549051968EFC600F0B0A3 /* antlr3baserecognizer.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548EE1968EFC600F0B0A3 /* antlr3baserecognizer.c */; };
+		54C549061968EFC600F0B0A3 /* antlr3basetree.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548EF1968EFC600F0B0A3 /* antlr3basetree.c */; };
+		54C549071968EFC600F0B0A3 /* antlr3basetreeadaptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F01968EFC600F0B0A3 /* antlr3basetreeadaptor.c */; };
+		54C549081968EFC600F0B0A3 /* antlr3bitset.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F11968EFC600F0B0A3 /* antlr3bitset.c */; };
+		54C549091968EFC600F0B0A3 /* antlr3collections.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F21968EFC600F0B0A3 /* antlr3collections.c */; };
+		54C5490A1968EFC600F0B0A3 /* antlr3commontoken.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F31968EFC600F0B0A3 /* antlr3commontoken.c */; };
+		54C5490B1968EFC600F0B0A3 /* antlr3commontree.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F41968EFC600F0B0A3 /* antlr3commontree.c */; };
+		54C5490C1968EFC600F0B0A3 /* antlr3commontreeadaptor.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F51968EFC600F0B0A3 /* antlr3commontreeadaptor.c */; };
+		54C5490D1968EFC600F0B0A3 /* antlr3commontreenodestream.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F61968EFC600F0B0A3 /* antlr3commontreenodestream.c */; };
+		54C5490E1968EFC600F0B0A3 /* antlr3convertutf.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F71968EFC600F0B0A3 /* antlr3convertutf.c */; };
+		54C5490F1968EFC600F0B0A3 /* antlr3cyclicdfa.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F81968EFC600F0B0A3 /* antlr3cyclicdfa.c */; };
+		54C549101968EFC600F0B0A3 /* antlr3debughandlers.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548F91968EFC600F0B0A3 /* antlr3debughandlers.c */; };
+		54C549111968EFC600F0B0A3 /* antlr3encodings.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548FA1968EFC600F0B0A3 /* antlr3encodings.c */; };
+		54C549121968EFC600F0B0A3 /* antlr3exception.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548FB1968EFC600F0B0A3 /* antlr3exception.c */; };
+		54C549131968EFC600F0B0A3 /* antlr3filestream.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548FC1968EFC600F0B0A3 /* antlr3filestream.c */; };
+		54C549141968EFC600F0B0A3 /* antlr3inputstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548FD1968EFC600F0B0A3 /* antlr3inputstream.c */; };
+		54C549151968EFC600F0B0A3 /* antlr3intstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548FE1968EFC600F0B0A3 /* antlr3intstream.c */; };
+		54C549161968EFC600F0B0A3 /* antlr3lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C548FF1968EFC600F0B0A3 /* antlr3lexer.c */; };
+		54C549171968EFC600F0B0A3 /* antlr3parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C549001968EFC600F0B0A3 /* antlr3parser.c */; };
+		54C549181968EFC600F0B0A3 /* antlr3rewritestreams.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C549011968EFC600F0B0A3 /* antlr3rewritestreams.c */; };
+		54C549191968EFC600F0B0A3 /* antlr3string.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C549021968EFC600F0B0A3 /* antlr3string.c */; };
+		54C5491A1968EFC600F0B0A3 /* antlr3tokenstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C549031968EFC600F0B0A3 /* antlr3tokenstream.c */; };
+		54C5491B1968EFC600F0B0A3 /* antlr3treeparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C549041968EFC600F0B0A3 /* antlr3treeparser.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54C548DB1968EF8F00F0B0A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54C548BD1968EF8F00F0B0A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C548C41968EF8F00F0B0A3;
+			remoteInfo = antlr3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54C548C31968EF8F00F0B0A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54C548C51968EF8F00F0B0A3 /* libantlr3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libantlr3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C548C81968EF8F00F0B0A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54C548CC1968EF8F00F0B0A3 /* antlr3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "antlr3-Prefix.pch"; sourceTree = "<group>"; };
+		54C548D51968EF8F00F0B0A3 /* antlr3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = antlr3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C548D61968EF8F00F0B0A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		54C548D91968EF8F00F0B0A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		54C548E01968EF8F00F0B0A3 /* antlr3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "antlr3Tests-Info.plist"; sourceTree = "<group>"; };
+		54C548E21968EF8F00F0B0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54C548E41968EF8F00F0B0A3 /* antlr3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = antlr3Tests.m; sourceTree = "<group>"; };
+		54C548EE1968EFC600F0B0A3 /* antlr3baserecognizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3baserecognizer.c; path = ../../../../runtime/C/src/antlr3baserecognizer.c; sourceTree = "<group>"; };
+		54C548EF1968EFC600F0B0A3 /* antlr3basetree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3basetree.c; path = ../../../../runtime/C/src/antlr3basetree.c; sourceTree = "<group>"; };
+		54C548F01968EFC600F0B0A3 /* antlr3basetreeadaptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3basetreeadaptor.c; path = ../../../../runtime/C/src/antlr3basetreeadaptor.c; sourceTree = "<group>"; };
+		54C548F11968EFC600F0B0A3 /* antlr3bitset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3bitset.c; path = ../../../../runtime/C/src/antlr3bitset.c; sourceTree = "<group>"; };
+		54C548F21968EFC600F0B0A3 /* antlr3collections.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3collections.c; path = ../../../../runtime/C/src/antlr3collections.c; sourceTree = "<group>"; };
+		54C548F31968EFC600F0B0A3 /* antlr3commontoken.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3commontoken.c; path = ../../../../runtime/C/src/antlr3commontoken.c; sourceTree = "<group>"; };
+		54C548F41968EFC600F0B0A3 /* antlr3commontree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3commontree.c; path = ../../../../runtime/C/src/antlr3commontree.c; sourceTree = "<group>"; };
+		54C548F51968EFC600F0B0A3 /* antlr3commontreeadaptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3commontreeadaptor.c; path = ../../../../runtime/C/src/antlr3commontreeadaptor.c; sourceTree = "<group>"; };
+		54C548F61968EFC600F0B0A3 /* antlr3commontreenodestream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3commontreenodestream.c; path = ../../../../runtime/C/src/antlr3commontreenodestream.c; sourceTree = "<group>"; };
+		54C548F71968EFC600F0B0A3 /* antlr3convertutf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3convertutf.c; path = ../../../../runtime/C/src/antlr3convertutf.c; sourceTree = "<group>"; };
+		54C548F81968EFC600F0B0A3 /* antlr3cyclicdfa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3cyclicdfa.c; path = ../../../../runtime/C/src/antlr3cyclicdfa.c; sourceTree = "<group>"; };
+		54C548F91968EFC600F0B0A3 /* antlr3debughandlers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3debughandlers.c; path = ../../../../runtime/C/src/antlr3debughandlers.c; sourceTree = "<group>"; };
+		54C548FA1968EFC600F0B0A3 /* antlr3encodings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3encodings.c; path = ../../../../runtime/C/src/antlr3encodings.c; sourceTree = "<group>"; };
+		54C548FB1968EFC600F0B0A3 /* antlr3exception.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3exception.c; path = ../../../../runtime/C/src/antlr3exception.c; sourceTree = "<group>"; };
+		54C548FC1968EFC600F0B0A3 /* antlr3filestream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3filestream.c; path = ../../../../runtime/C/src/antlr3filestream.c; sourceTree = "<group>"; };
+		54C548FD1968EFC600F0B0A3 /* antlr3inputstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3inputstream.c; path = ../../../../runtime/C/src/antlr3inputstream.c; sourceTree = "<group>"; };
+		54C548FE1968EFC600F0B0A3 /* antlr3intstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3intstream.c; path = ../../../../runtime/C/src/antlr3intstream.c; sourceTree = "<group>"; };
+		54C548FF1968EFC600F0B0A3 /* antlr3lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3lexer.c; path = ../../../../runtime/C/src/antlr3lexer.c; sourceTree = "<group>"; };
+		54C549001968EFC600F0B0A3 /* antlr3parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3parser.c; path = ../../../../runtime/C/src/antlr3parser.c; sourceTree = "<group>"; };
+		54C549011968EFC600F0B0A3 /* antlr3rewritestreams.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3rewritestreams.c; path = ../../../../runtime/C/src/antlr3rewritestreams.c; sourceTree = "<group>"; };
+		54C549021968EFC600F0B0A3 /* antlr3string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3string.c; path = ../../../../runtime/C/src/antlr3string.c; sourceTree = "<group>"; };
+		54C549031968EFC600F0B0A3 /* antlr3tokenstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3tokenstream.c; path = ../../../../runtime/C/src/antlr3tokenstream.c; sourceTree = "<group>"; };
+		54C549041968EFC600F0B0A3 /* antlr3treeparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = antlr3treeparser.c; path = ../../../../runtime/C/src/antlr3treeparser.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54C548C21968EF8F00F0B0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548C91968EF8F00F0B0A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C548D21968EF8F00F0B0A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548D71968EF8F00F0B0A3 /* XCTest.framework in Frameworks */,
+				54C548DD1968EF8F00F0B0A3 /* libantlr3.a in Frameworks */,
+				54C548DA1968EF8F00F0B0A3 /* UIKit.framework in Frameworks */,
+				54C548D81968EF8F00F0B0A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54C548BC1968EF8F00F0B0A3 = {
+			isa = PBXGroup;
+			children = (
+				54C548CA1968EF8F00F0B0A3 /* antlr3 */,
+				54C548DE1968EF8F00F0B0A3 /* antlr3Tests */,
+				54C548C71968EF8F00F0B0A3 /* Frameworks */,
+				54C548C61968EF8F00F0B0A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54C548C61968EF8F00F0B0A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54C548C51968EF8F00F0B0A3 /* libantlr3.a */,
+				54C548D51968EF8F00F0B0A3 /* antlr3Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C548C71968EF8F00F0B0A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54C548C81968EF8F00F0B0A3 /* Foundation.framework */,
+				54C548D61968EF8F00F0B0A3 /* XCTest.framework */,
+				54C548D91968EF8F00F0B0A3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54C548CA1968EF8F00F0B0A3 /* antlr3 */ = {
+			isa = PBXGroup;
+			children = (
+				54C548EE1968EFC600F0B0A3 /* antlr3baserecognizer.c */,
+				54C548EF1968EFC600F0B0A3 /* antlr3basetree.c */,
+				54C548F01968EFC600F0B0A3 /* antlr3basetreeadaptor.c */,
+				54C548F11968EFC600F0B0A3 /* antlr3bitset.c */,
+				54C548F21968EFC600F0B0A3 /* antlr3collections.c */,
+				54C548F31968EFC600F0B0A3 /* antlr3commontoken.c */,
+				54C548F41968EFC600F0B0A3 /* antlr3commontree.c */,
+				54C548F51968EFC600F0B0A3 /* antlr3commontreeadaptor.c */,
+				54C548F61968EFC600F0B0A3 /* antlr3commontreenodestream.c */,
+				54C548F71968EFC600F0B0A3 /* antlr3convertutf.c */,
+				54C548F81968EFC600F0B0A3 /* antlr3cyclicdfa.c */,
+				54C548F91968EFC600F0B0A3 /* antlr3debughandlers.c */,
+				54C548FA1968EFC600F0B0A3 /* antlr3encodings.c */,
+				54C548FB1968EFC600F0B0A3 /* antlr3exception.c */,
+				54C548FC1968EFC600F0B0A3 /* antlr3filestream.c */,
+				54C548FD1968EFC600F0B0A3 /* antlr3inputstream.c */,
+				54C548FE1968EFC600F0B0A3 /* antlr3intstream.c */,
+				54C548FF1968EFC600F0B0A3 /* antlr3lexer.c */,
+				54C549001968EFC600F0B0A3 /* antlr3parser.c */,
+				54C549011968EFC600F0B0A3 /* antlr3rewritestreams.c */,
+				54C549021968EFC600F0B0A3 /* antlr3string.c */,
+				54C549031968EFC600F0B0A3 /* antlr3tokenstream.c */,
+				54C549041968EFC600F0B0A3 /* antlr3treeparser.c */,
+				54C548CB1968EF8F00F0B0A3 /* Supporting Files */,
+			);
+			path = antlr3;
+			sourceTree = "<group>";
+		};
+		54C548CB1968EF8F00F0B0A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54C548CC1968EF8F00F0B0A3 /* antlr3-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54C548DE1968EF8F00F0B0A3 /* antlr3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				54C548E41968EF8F00F0B0A3 /* antlr3Tests.m */,
+				54C548DF1968EF8F00F0B0A3 /* Supporting Files */,
+			);
+			path = antlr3Tests;
+			sourceTree = "<group>";
+		};
+		54C548DF1968EF8F00F0B0A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54C548E01968EF8F00F0B0A3 /* antlr3Tests-Info.plist */,
+				54C548E11968EF8F00F0B0A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54C548C41968EF8F00F0B0A3 /* antlr3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C548E81968EF8F00F0B0A3 /* Build configuration list for PBXNativeTarget "antlr3" */;
+			buildPhases = (
+				54C548C11968EF8F00F0B0A3 /* Sources */,
+				54C548C21968EF8F00F0B0A3 /* Frameworks */,
+				54C548C31968EF8F00F0B0A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = antlr3;
+			productName = antlr3;
+			productReference = 54C548C51968EF8F00F0B0A3 /* libantlr3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		54C548D41968EF8F00F0B0A3 /* antlr3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54C548EB1968EF8F00F0B0A3 /* Build configuration list for PBXNativeTarget "antlr3Tests" */;
+			buildPhases = (
+				54C548D11968EF8F00F0B0A3 /* Sources */,
+				54C548D21968EF8F00F0B0A3 /* Frameworks */,
+				54C548D31968EF8F00F0B0A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C548DC1968EF8F00F0B0A3 /* PBXTargetDependency */,
+			);
+			name = antlr3Tests;
+			productName = antlr3Tests;
+			productReference = 54C548D51968EF8F00F0B0A3 /* antlr3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54C548BD1968EF8F00F0B0A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = uskee;
+			};
+			buildConfigurationList = 54C548C01968EF8F00F0B0A3 /* Build configuration list for PBXProject "antlr3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54C548BC1968EF8F00F0B0A3;
+			productRefGroup = 54C548C61968EF8F00F0B0A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54C548C41968EF8F00F0B0A3 /* antlr3 */,
+				54C548D41968EF8F00F0B0A3 /* antlr3Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54C548D31968EF8F00F0B0A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548E31968EF8F00F0B0A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54C548C11968EF8F00F0B0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C549191968EFC600F0B0A3 /* antlr3string.c in Sources */,
+				54C549151968EFC600F0B0A3 /* antlr3intstream.c in Sources */,
+				54C5490A1968EFC600F0B0A3 /* antlr3commontoken.c in Sources */,
+				54C549091968EFC600F0B0A3 /* antlr3collections.c in Sources */,
+				54C5490C1968EFC600F0B0A3 /* antlr3commontreeadaptor.c in Sources */,
+				54C549181968EFC600F0B0A3 /* antlr3rewritestreams.c in Sources */,
+				54C549111968EFC600F0B0A3 /* antlr3encodings.c in Sources */,
+				54C5491A1968EFC600F0B0A3 /* antlr3tokenstream.c in Sources */,
+				54C549141968EFC600F0B0A3 /* antlr3inputstream.c in Sources */,
+				54C549061968EFC600F0B0A3 /* antlr3basetree.c in Sources */,
+				54C549071968EFC600F0B0A3 /* antlr3basetreeadaptor.c in Sources */,
+				54C549081968EFC600F0B0A3 /* antlr3bitset.c in Sources */,
+				54C549131968EFC600F0B0A3 /* antlr3filestream.c in Sources */,
+				54C549121968EFC600F0B0A3 /* antlr3exception.c in Sources */,
+				54C549101968EFC600F0B0A3 /* antlr3debughandlers.c in Sources */,
+				54C549051968EFC600F0B0A3 /* antlr3baserecognizer.c in Sources */,
+				54C5491B1968EFC600F0B0A3 /* antlr3treeparser.c in Sources */,
+				54C5490B1968EFC600F0B0A3 /* antlr3commontree.c in Sources */,
+				54C549161968EFC600F0B0A3 /* antlr3lexer.c in Sources */,
+				54C549171968EFC600F0B0A3 /* antlr3parser.c in Sources */,
+				54C5490D1968EFC600F0B0A3 /* antlr3commontreenodestream.c in Sources */,
+				54C5490F1968EFC600F0B0A3 /* antlr3cyclicdfa.c in Sources */,
+				54C5490E1968EFC600F0B0A3 /* antlr3convertutf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54C548D11968EF8F00F0B0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C548E51968EF8F00F0B0A3 /* antlr3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C548DC1968EF8F00F0B0A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54C548C41968EF8F00F0B0A3 /* antlr3 */;
+			targetProxy = 54C548DB1968EF8F00F0B0A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54C548E11968EF8F00F0B0A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54C548E21968EF8F00F0B0A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54C548E61968EF8F00F0B0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54C548E71968EF8F00F0B0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C548E91968EF8F00F0B0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/antlr3.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "antlr3/antlr3-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../runtime/C/include",
+					"$(SRCROOT)/../../../runtime/C",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54C548EA1968EF8F00F0B0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/antlr3.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "antlr3/antlr3-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../runtime/C/include",
+					"$(SRCROOT)/../../../runtime/C",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		54C548EC1968EF8F00F0B0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "antlr3/antlr3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "antlr3Tests/antlr3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		54C548ED1968EF8F00F0B0A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "antlr3/antlr3-Prefix.pch";
+				INFOPLIST_FILE = "antlr3Tests/antlr3Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54C548C01968EF8F00F0B0A3 /* Build configuration list for PBXProject "antlr3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C548E61968EF8F00F0B0A3 /* Debug */,
+				54C548E71968EF8F00F0B0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54C548E81968EF8F00F0B0A3 /* Build configuration list for PBXNativeTarget "antlr3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C548E91968EF8F00F0B0A3 /* Debug */,
+				54C548EA1968EF8F00F0B0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54C548EB1968EF8F00F0B0A3 /* Build configuration list for PBXNativeTarget "antlr3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C548EC1968EF8F00F0B0A3 /* Debug */,
+				54C548ED1968EF8F00F0B0A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54C548BD1968EF8F00F0B0A3 /* Project object */;
+}
