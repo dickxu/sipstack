@@ -4,8 +4,8 @@ set_ios ()
 {
     [ "$ARCH" = "" ] && ARCH=armv7
 
-    CC=clang
-    CXX=clang++
+    CC=`xcrun -f clang`
+    CXX=`xcrun -f clang++`
     if [[ "$ARCH" =~ "86" ]]; then
         SDKTYPE=iPhoneSimulator
     else
@@ -29,6 +29,6 @@ cfg_ios ()
     export CXX="$CXX"
     export CFLAGS="$CFLAGS"
     export LDFLAGS="$LDFLAGS"
-    ./configure --host=arm --disable-shared $OPTIONS
+    ./configure --host=armv7-apple-darwin --disable-shared $OPTIONS
 }
 
